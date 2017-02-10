@@ -8,6 +8,7 @@ function Neighborhood (opts) {
 
 Neighborhood.prototype.toHtml = function() {
  // TODO: Complete this using Handlebars!!!
+
 };
 
 neighborhoodDataSet.forEach(function(neighborhoodObject) {
