@@ -1,0 +1,22 @@
+
+.city {
+  color:yellow;
+  padding:1em;
+}
+
+.city section {
+  margin: 1em;
+  background-color: gray;
+  border: 5px solid orange;
+  padding: 1em;
+}
+.city section p {
+  font-size: 0.5em;
+}
+
+.city h1 {
+  font-size: 2em;
+}
+
+body {
+}

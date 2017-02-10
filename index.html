@@ -7,7 +7,17 @@
 
     <!-- TODO -->
     <!-- Let's put the Handlebars template here, in a <script> tag -->
-
+    <script id="neighborhoods-template" type="text/x-handlebars-template">
+      <section>
+        <h1>{{name}}, {{city}}<h1>
+          <section>
+            <p>Population: {{population}}</p>
+            <p>Founded: {{founded}}</p>
+            {{{body}}}
+          </section>
+      </section>
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <header class="site-header clearfix">
@@ -18,7 +28,7 @@
       </section>
     </header>
     <main>
-      <section id="neighborhoods"></section>
+      <section id="neighborhoods" class="city"></section>
     </main>
     <footer>
       <hr>

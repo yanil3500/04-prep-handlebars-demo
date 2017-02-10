@@ -9,6 +9,13 @@ function Neighborhood (opts) {
 Neighborhood.prototype.toHtml = function() {
  // TODO: Complete this using Handlebars!!!
 
+ //Get the source for template from script tag in head of index.html
+ var source = $('#neighborhoods-template').html();
+ //Compile the source into template creation
+ var template = Handlebars.compile(source);
+//Pass data to template, in this case, 'this'
+return template(this);
+
 };
 
 neighborhoodDataSet.forEach(function(neighborhoodObject) {
